@@ -16,6 +16,7 @@
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:maxLines="1"
     android:layout_marginTop="20dp"
     android:hint="Enter Username"
     android:layout_marginHorizontal="30dp"
@@ -38,6 +39,7 @@
         android:layout_width="match_parent"
         android:visibility="invisible"
         android:orientation="horizontal"
+        android:id="@+id/layout_name"
         android:weightSum="2"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="15dp"
@@ -50,7 +52,7 @@
             android:layout_weight="1"
             android:id="@+id/user_name_heading"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="xxxx"
             android:id="@+id/user_name"
@@ -61,23 +63,24 @@
         android:layout_width="match_parent"
         android:visibility="invisible"
         android:orientation="horizontal"
-        android:weightSum="2"
+        android:id="@+id/layout_githublink"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="15dp"
+        android:weightSum="2"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="GithubLink:"
-            android:theme="@style/TextViewHeadings"
             android:layout_weight="1"
+            android:theme="@style/TextViewHeadings"
             android:id="@+id/user_githublink_heading"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="xxxx"
-            android:id="@+id/github_link"
             android:layout_weight="1"
+            android:id="@+id/github_link"
             android:theme="@style/TextViewHeadings"/>
     </LinearLayout>
     <LinearLayout
@@ -87,6 +90,7 @@
         android:weightSum="2"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="15dp"
+        android:id="@+id/layout_bio"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="0dp"
@@ -96,7 +100,7 @@
             android:layout_weight="1"
             android:id="@+id/user_bio_heading"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="xxxx"
             android:id="@+id/user_bio"
@@ -108,6 +112,7 @@
         android:visibility="invisible"
         android:orientation="horizontal"
         android:weightSum="2"
+        android:id="@+id/layout_repositories"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="15dp"
         android:layout_height="wrap_content">
@@ -119,7 +124,7 @@
             android:layout_weight="1"
             android:id="@+id/user_repo_heading"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="xxxx"
             android:layout_weight="1"
@@ -131,6 +136,7 @@
                 android:visibility="invisible"
                 android:orientation="horizontal"
                 android:weightSum="2"
+                android:id="@+id/layout_followers"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_height="wrap_content">
@@ -142,7 +148,7 @@
                     android:layout_weight="1"
                     android:id="@+id/user_followers_heading"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="xxxx"
                     android:layout_weight="1"
@@ -154,6 +160,7 @@
                 android:visibility="invisible"
                 android:orientation="horizontal"
                 android:weightSum="2"
+                android:id="@+id/layout_following"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_height="wrap_content">
@@ -165,7 +172,7 @@
                     android:layout_weight="1"
                     android:id="@+id/user_following_heading"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="xxxx"
                     android:layout_weight="1"
@@ -177,6 +184,7 @@
                 android:visibility="invisible"
                 android:orientation="horizontal"
                 android:weightSum="2"
+                android:id="@+id/layout_joinedat"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_height="wrap_content">
@@ -188,7 +196,7 @@
                     android:layout_weight="1"
                     android:id="@+id/user_joinedat_heading"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="xxxx"
                     android:layout_weight="1"
